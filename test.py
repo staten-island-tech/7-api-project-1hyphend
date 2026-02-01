@@ -23,7 +23,7 @@ for i in range(4):
 
 def create_question():
     if window.current_question >= len(questions):
-        question_label.config(text=f"Game Over!\nScore: {window.score} / {len(questions)}")
+        question_label.config(text=f"Game Over\nScore: {window.score} / {len(questions)}")
         return
     q = questions[window.current_question]
     answers = q["incorrect_answers"] + [q["correct_answer"]]
